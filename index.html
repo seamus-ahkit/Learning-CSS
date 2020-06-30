@@ -19,15 +19,90 @@
         View more <a target="_blank" href="http://freecatphotoapp.com">cat photos</a>
     </p>
   
-    <p> <!-- Dead link example below-->
+    <p> <!-- Dead link example below -->
         Dead <a target="_blank" href="#">link</a>
     </p>
 
-    <p> <!-- Turn an Image into a link-->
-        <a href="#"><img src="https://i.imgur.com/qZImY9j.jpg" alt="cat selfie"></a>
-    </p>
-</main>
+    <!--Turn an Image into a link -->
+    <a href="#"><img src="https://i.imgur.com/qZImY9j.jpg" alt="cat selfie"></a>
+   
 
+    <!-- Unordered list -->
+    <p>To do list of things to think about today:</p>
+    <ul>
+        <li>Cat</li>
+        <li>Cats</li>
+        <li>More cats!</li>
+    </ul>
+
+    <!-- Ordered list -->
+    <p>Favourite cats, my top 3:</p>
+    <ol>
+        <li>Ragdoll</li>
+        <li>Tabby</li>
+        <li>Tortoise shell</li>
+    </ol>
+
+    <!-- Text field -->
+    <input type="text" placeholder="Enter text, if you dare"><br><br>
+    
+    <!-- Text field with submittable form -->
+    <form action ="/submit-cat-photo"><input type="text" placeholder="Submit your cat photo idea here"></form><br>
+
+    <!-- Text field with submittable form, button and requiring to be filled out for submission -->
+    <form action ="/submit-cat-photo"><input type="text" placeholder="Submit a cat name" required><button type="Submit">Submit cat name</button></form><br>
+
+    <!-- Radio buttons -->
+    <form action ="/submit-cat-photo">
+        <label for="indoor">
+            <input id="indoor" type="radio" name="indoor-outdoor">Indoor
+        </label>
+        <label for="outdoor">
+            <input id="outdoor" type="radio" name="indoor-outdoor">Outdoor
+        </label><br>
+        <input type="text" placeholder="Submit a cat name" required><button type="Submit">Submit cat name</button>
+    </form><br>
+
+    <!-- Checkboxes -->
+    <form action ="/submit-cat-photo">
+        <label for="Scary">
+            <input id="Scary" type="checkbox" name="personality"> Scary
+        </label><br>
+        <label for="Rambunctious">
+            <input id="Rambunctious" type="checkbox" name="personality"> Rambunctious
+        </label><br>
+        <label for="Fiesty">
+            <input id="Fiesty" type="checkbox" name="personality"> Fiesty
+        </label><br>
+        <input type="text" placeholder="Submit a cat name" required><button type="Submit">Submit cat name</button>
+    </form><br>
+
+    <!-- Value Attribute with Radio Buttons and Checkboxes -->
+    <form action ="/submit-cat-photo">
+    <!-- Radio Buttons Start -->    
+        <label for="indoor">
+            <input id="indoor" value="indoor" type="radio" name="indoor-outdoor">Indoor
+        </label>
+        <label for="outdoor">
+            <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">Outdoor
+        </label><br>
+    <!-- Radio Buttons End -->   
+    <!-- Personality Checkboxes Start -->
+        <label for="Scary">
+            <input id="Scary" value="Scary" type="checkbox" name="personality"> Scary
+        </label><br>
+        <label for="Rambunctious">
+            <input id="Rambunctious" value="Rambunctious" type="checkbox" name="personality"> Rambunctious
+        </label><br>
+        <label for="Fiesty">
+            <input id="Fiesty" value="Fiesty" type="checkbox" name="personality"> Fiesty
+        </label><br>
+    <!-- Personality Checkboxes end -->    
+        <input type="text" placeholder="Submit a cat name" required><button type="Submit">Submit cat name</button>
+    </form>
+
+</main>
+<br>
 <footer id="footer">Copyright Cat Photo App</footer>
 </body>
 </html>
