@@ -24,7 +24,21 @@
                 border-color: yellow;
                 border-width: 5px;
                 border-style: solid;
+                border-radius: 5px;
             }
+            .silver-background {
+                background-color: silver;
+            }
+            #radio-cat-photo-form {
+                font-size: 20px;
+                background-color: blueviolet;
+            }
+
+            #checkbox-cat-photo-form {
+                font-size: 20px;
+                background-color: cornflowerblue;
+            }
+
         </style>
     </head>
 <!-- below you will see my practice content from freeCodeCamp -->
@@ -35,7 +49,7 @@
         <a href="#footer">Jump to bottom</a>
 
     <main>
-        <img src="https://bit.ly/fcc-relaxing-cat" alt="A relaxed kitty" class="medium-image thin-yellow-border">
+        <img src="https://bit.ly/fcc-relaxing-cat" alt="A relaxed kitty" class="medium-image thin-yellow-border" style="border-radius:50%">
 
         <div class="red-text">
             <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
@@ -49,7 +63,7 @@
         <!--Turn an Image into a link -->
         <a href="#"><img src="https://i.imgur.com/qZImY9j.jpg" alt="cat selfie" class="medium-image thin-yellow-border"></a>
     
-        <div>
+        <div class="silver-background">
 
         <!-- Unordered list -->
             <p>To do list of things to think about today:</p>
@@ -78,7 +92,7 @@
         <form action ="/submit-cat-photo"><input type="text" placeholder="Submit a cat name" required><button type="Submit">Submit cat name</button></form><br>
 
         <!-- Radio buttons -->
-        <form action ="/submit-cat-photo">
+        <form action ="/submit-cat-photo" id="radio-cat-photo-form">
             <label for="indoor">
                 <input id="indoor" type="radio" name="indoor-outdoor">Indoor
             </label>
@@ -89,7 +103,7 @@
         </form><br>
 
         <!-- Checkboxes -->
-        <form action ="/submit-cat-photo">
+        <form action ="/submit-cat-photo" id="checkbox-cat-photo-form">
             <label for="Scary">
                 <input id="Scary" type="checkbox" name="personality"> Scary
             </label><br>
