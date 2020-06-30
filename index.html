@@ -3,6 +3,29 @@
     <head>
         <title> My Practice Website!</title>
         <link href="index.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <!--<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">-->
+        <style>
+            h2 {
+                color: blue;
+                font-family: Lobster;
+            }
+            .red-text {
+                color: red;
+            }
+            p {
+                font-size: 16px;
+                font-family: Yellowtail, monospace;
+            }
+            .medium-image {
+                width: 250px;
+            }
+            .thin-yellow-border {
+                border-color: yellow;
+                border-width: 5px;
+                border-style: solid;
+            }
+        </style>
     </head>
 <!-- below you will see my practice content from freeCodeCamp -->
     <body>
@@ -12,18 +35,22 @@
         <a href="#footer">Jump to bottom</a>
 
     <main>
-        <img src="https://bit.ly/fcc-relaxing-cat" alt="A relaxed kitty">
-        <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
-        <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
-        <p>View more <a target="_blank" href="http://freecatphotoapp.com">cat photos</a></p>
-    
+        <img src="https://bit.ly/fcc-relaxing-cat" alt="A relaxed kitty" class="medium-image thin-yellow-border">
+
+        <div class="red-text">
+            <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+            <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+            <p>View more <a target="_blank" href="http://freecatphotoapp.com">cat photos</a></p>
+        </div>
+
         <!-- Dead link example below -->
         <p>Dead <a target="_blank" href="#">link</a></p>
 
         <!--Turn an Image into a link -->
-        <a href="#"><img src="https://i.imgur.com/qZImY9j.jpg" alt="cat selfie"></a>
+        <a href="#"><img src="https://i.imgur.com/qZImY9j.jpg" alt="cat selfie" class="medium-image thin-yellow-border"></a>
     
         <div>
+
         <!-- Unordered list -->
             <p>To do list of things to think about today:</p>
             <ul>
